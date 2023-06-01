@@ -9,7 +9,7 @@ const app = express()
 //middleware
 app.use(express.json())
 app.use(cors({
-    origin:'https://pin-verification-task.netlify.app/'
+    origin:'https://pin-verification-task.netlify.app'
 }))
 dotenv.config()
 
