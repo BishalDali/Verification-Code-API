@@ -5,6 +5,8 @@ import { VerificationCodeDTO } from "../dto/verification-code.dto";
 export const verifyCode = (req: Request, res: Response) => {
   const { code }: VerificationCodeDTO = req.body;
   const isVerified = isCodeValid({ code });
+  
+ 
   if (isVerified) {
     return res.status(200).json({
       message: "Verification Successful",
