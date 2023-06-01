@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"nodemon ./dist/src/index.js\" \"tsc -w\"",
-    "build": "tsc -p .",
+    "build": "npm install && tsc -p .",
     "dev": "nodemon ./dist/src/index.js"
   },
   "author": "",
